@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block pictures %}
+  {% for pic in pic_list %}
+    <ul>
+      <li>
+        <h2>{{ pic.title }}</h2>
+        <a href="/pic/{{ pic.pk }}"><img class="img" src="{{ pic.image.url }}" alt=""></a>
+        <h4>Created {{ pic.created_at }}</h4>
+        <hr>
+      </li>
+    </ul>
+
+    {% empty %}
+    <li>
+      <h2>Sorry!</h2>
+      <h3>There no content yet</h3>
+    </li>
+  {% endfor %}
+{% endblock %}
+
+
+
+

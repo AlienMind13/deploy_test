@@ -1,0 +1,17 @@
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
+
+.img {
+  max-width: 600px;
+  max-height: 1000px;
+}
+.title-text {
+  font-family: Magneto, serif;
+  font-size: 2em;
+  color: firebrick;
+}
